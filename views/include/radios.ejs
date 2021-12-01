@@ -1,0 +1,17 @@
+<h3>All Radios</h3>
+<div style="overflow: auto;
+  white-space: nowrap; padding: 10px;">
+      <%radio.info.forEach(r => {%>
+        <img src="<%=r.image%>" alt="<%=r.name%>" width="100" onclick="window.location.href='/radio/<%=r.id%>';" style="border-radius:100%;"/>
+        <%})%>
+          </div>
+          <br>
+          <h3>Music Radios</h3>
+          <div style="overflow: auto;
+  white-space: nowrap; padding: 10px;">
+      <%radio.info.forEach(r => {%>
+        <%if(r.api.category.includes("music")) {%>
+        <img src="<%=r.image%>" alt="<%=r.name%>" width="100" onclick="window.location.href='/radio/<%=r.id%>';" style="border-radius:100%;"/>
+        <%}%>
+          <%})%>
+            </div>

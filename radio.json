@@ -5,7 +5,8 @@
   "description": "",
   "id": "1",
   "api": {
-"listen":"https://streaming.radiostreamlive.com/radionylive_devices"
+"listen":"https://streaming.radiostreamlive.com/radionylive_devices",
+"category": ["music", "radio"]
   }
 },{
   "name": "101.7 The One (Wingham, Canada)",
@@ -13,7 +14,18 @@
   "description": "",
   "id": "2",
   "api": {
-"listen":"https://blackburn-ais.leanstream.co/CKNXFM-MP3"
+"listen":"https://blackburn-ais.leanstream.co/CKNXFM-MP3",
+    "category": ["music","radio"]
+  }
+},
+{
+  "name": "Hits 94",
+  "image": "https://cdn-radiotime-logos.tunein.com/s142771q.png",
+  "description": "",
+  "id": "3",
+  "api": {
+"listen":"https://ais-sa5.cdnstream1.com/b14981_128mp3",
+    "category": ["music","radio"]
   }
 }]
 }

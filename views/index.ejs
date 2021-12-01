@@ -1,5 +1,5 @@
 <!doctype html>
-<%-include('./include/head.ejs', {title: "Home", description: "Jasper, a platform to discover new Radios stations."})%>
+<%-include('./include/head.ejs', {title: "Home", description: "Jasper, a platform to discover new Radios stations.", author: ""})%>
 <body>
   <div id="home">
     <center>
@@ -8,12 +8,9 @@
     </center>
   </div>
   <div id="discover">
-    <div style="overflow: auto;
-  white-space: nowrap; padding: 10px;">
-      <%radio.info.forEach(r => {%>
-        <img src="<%=r.image%>" alt="<%=r.name%>" width="100" onclick="window.location.href='/radio/<%=r.id%>';" style="border-radius:100%;"/>
-        <%})%>
-  </div>
+    <center>
+      <%-include('./include/radios.ejs')%>
+          </center>
   </div>
 </body>
         </html>
