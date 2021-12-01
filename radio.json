@@ -25,7 +25,7 @@
   "id": "3",
   "api": {
 "listen":"https://ais-sa5.cdnstream1.com/b14981_128mp3",
-    "category": ["music","radio"]
+    "category": ["music"]
   }
 }]
 }

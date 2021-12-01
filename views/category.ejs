@@ -1,10 +1,15 @@
 <!doctype html>
 <%-include('./include/head.ejs', {title: "Category", description: "Jasper, a platform to discover new Radios stations.", author: ""})%>
 <body>
+  <center>
   <%radio.info.forEach(r => {%>
-    <%if(r.api.category.includes(req.params.id)) {%> 
-      <%=r.api.category%>
-      <%}%>
-    <%})%>
+    <%if(r.api.category.includes(req.params.id)) {%>
+        <img src="<%=r.image%>" width="100" alt="<%=r.name%>" onclick="window.location.href='/radio/<%=r.id%>'" style="border-radius:100%;"/>
+          <br>
+    <%} else {%>
+      
+      <%}
+      })%>
+        </center>
 </body>
         </html>
