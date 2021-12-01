@@ -1,0 +1,16 @@
+<!doctype html>
+<%radio.info.forEach(r => {
+  if(req.params.id === r.id) {%>
+<%-include('./include/head.ejs', {title: r.name, description: "Jasper, a platform to discover new Radios stations."})%>
+<body>
+  <div style="width:100%; height: 50em;">
+  <center>
+    <div style="padding: 10px">
+    <img src="<%=r.image%>" style="border-radius:100%;" width="150"/>
+    </div>
+  </center>
+  </div>
+</body>
+        </html>
+  <%}
+    })%>

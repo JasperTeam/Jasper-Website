@@ -1,0 +1,19 @@
+<!doctype html>
+<%-include('./include/head.ejs', {title: "Home", description: "Jasper, a platform to discover new Radios stations."})%>
+<body>
+  <div id="home">
+    <center>
+      <h3 style="padding: 10px;">Welcome to <span style="color:purple;">Jasper</span>!</h3>
+      <button onclick="location.href='#discover'" class="getstarted">Get started</button>
+    </center>
+  </div>
+  <div id="discover">
+    <div style="overflow: auto;
+  white-space: nowrap; padding: 10px;">
+      <%radio.info.forEach(r => {%>
+        <img src="<%=r.image%>" alt="<%=r.name%>" width="100" onclick="window.location.href='/radio/<%=r.id%>';" style="border-radius:100%;"/>
+        <%})%>
+  </div>
+  </div>
+</body>
+        </html>

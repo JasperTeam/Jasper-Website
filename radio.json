@@ -1,0 +1,19 @@
+{
+"info":[{
+  "name": "Radio New York Live (US)",
+  "image": "http://cdn-radiotime-logos.tunein.com/s127108q.png",
+  "description": "",
+  "id": "1",
+  "api": {
+"listen":"https://streaming.radiostreamlive.com/radionylive_devices"
+  }
+},{
+  "name": "101.7 The One (Wingham, Canada)",
+  "image": "http://cdn-albums.tunein.com/gn/TQGGXXWP6Nq.jpg",
+  "description": "",
+  "id": "2",
+  "api": {
+"listen":"https://blackburn-ais.leanstream.co/CKNXFM-MP3"
+  }
+}]
+}
