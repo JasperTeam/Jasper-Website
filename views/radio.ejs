@@ -7,9 +7,13 @@
   <center>
     <div style="padding: 10px">
     <img src="<%=r.image%>" style="border-radius:100%;" width="150"/>
+      <audio id="audio" controls>
+        <source src="<%=r.api.listen%>"/>
+      </audio>
     </div>
   </center>
   </div>
+  <script src="./player.js"></script>
 </body>
         </html>
   <%}
