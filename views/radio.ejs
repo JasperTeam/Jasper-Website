@@ -4,15 +4,14 @@
 <%-include('./include/player.ejs', {title: r.name, description: "Jasper, a platform to discover new Radios stations.", author: r.name, image: r.image, id:r.id})%>
 <body>
   <div style="width:100%; height: 50em;">
-  <center>
-    <div style="padding: 10px">
-    <img src="<%=r.image%>" style="border-radius:100%;" width="150"/>
-      <audio id="audio" controls autoplay>
+    <div class="player">
+    <img src="<%=r.image%>" style="border-radius:100%;" width="150" id="radioimg"/>
+      <audio id="audio" autoplay>
         <source src="<%=r.api.listen%>"/>
+        Your browser does not support audio
       </audio>
-      
+      <p><%=r.name%></p>
     </div>
-  </center>
   </div>
   <script src="./player.js"></script>
 </body>

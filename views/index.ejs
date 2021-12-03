@@ -1,6 +1,7 @@
 <!doctype html>
 <%-include('./include/head.ejs', {title: "Home", description: "Jasper, a platform to discover new Radios stations.", author: ""})%>
 <body>
+  <%-include('./include/navbar.ejs', {user:req.user})%>
   <div id="home">
       <h3 style="padding: 10px;">Welcome to <span style="color:purple;">Jasper</span>!</h3>
       <button onclick="location.href='#discover'" class="getstarted" style="width: 80%;">Get started</button>

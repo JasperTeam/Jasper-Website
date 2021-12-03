@@ -24,3 +24,21 @@ body {
   width:100%;
   height: 48em;
 }
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #1a1a1a;
+  padding: 2px;
+  font-size: 105%;
+}
+
+#avatar {
+  border-radius: 100%;
+  width: 30px;
+}
+#nav {
+  position: fixed;
+  bottom:0;
+  right:0;
+  padding: 10px;
+}

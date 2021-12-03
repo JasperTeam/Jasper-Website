@@ -1,0 +1,14 @@
+<div id="nav">
+  <a href="/profile/@me">
+    <%if(req.isAuthenticated()) {%>
+  <%if(user.avatar) {%>
+  <img id="avatar" src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>"/>
+    <%} else {
+      %>
+      <img id="avatar" src="https://cdn.discordapp.com/embed/avatars/0.png"/>
+           <%}%>
+             <%} else {%>
+               <img id="avatar" src="https://cdn.discordapp.com/embed/avatars/0.png"/>
+               <%}%>
+      </a>
+</div>

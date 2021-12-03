@@ -19,6 +19,9 @@
   "homepage": "https://github.com/JasperTeam/Jasper-Website#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.0",
+    "passport-discord": "^0.1.4"
   }
 }
