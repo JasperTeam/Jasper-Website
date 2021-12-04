@@ -16,6 +16,7 @@ router.use('/search', (req, res, next) => {
         else return false;
     });
     if (!found) return res.send({ error: "No radios found for this search" });
-   res.render("search.ejs", {title: "test", radio, req, user: req.user});
+   res.render("search.ejs", {title: "test", radio, req, user: req.user, found});
+  
 });
 module.exports = router;

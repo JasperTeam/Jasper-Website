@@ -1,0 +1,20 @@
+<!doctype html>
+<%-include('./include/head.ejs', {title: "Search", description: "Jasper, a platform to discover new Radios stations.", author: ""})%>
+<body>
+  <%-include('./include/navbar.ejs', {user:req.user})%>
+  <div id="centerbox">
+   <form action="/search" ng-submit>
+      <input class="search" ng-model="radios" name="q"/>
+   </form>
+    <br>
+      <%found.forEach(r=> {%>
+        <%if(r) {%>
+          <img src="<%=r.image%>" alt="<%=r.name%>" width="100" onclick="window.location.href='/radio/<%=r.id%>';" style="border-radius:100%;"/>
+          <%} else {%>
+            Not found :(
+            <%}%>
+        <%})%>
+  </div>
+      
+</body>
+      </html>
