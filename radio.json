@@ -27,5 +27,24 @@
 "listen":"https://ais-sa5.cdnstream1.com/b14981_128mp3",
     "category": ["music"]
   }
+},
+{
+  "name": "Jasper",
+  "image": "https://media.discordapp.net/attachments/910534717445660725/916521112601505812/Novo_projeto_5_E916B4A.png",
+  "description": "",
+  "id": "4",
+  "api": {
+    "listen":"http://stream.zeno.fm/skd61bs3998uv",
+    "category": ["music"]
+  }
+}, {
+  "name":"BBC Radio 4 (London, UK)",
+  "image": "http://cdn-radiotime-logos.tunein.com/s25419q.png",
+  "description": "",
+  "id": "5",
+  "api": {
+    "listen": "http://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm?s=1638606665&e=1638621065&h=bec2f3a076a19fce0748bd5ff393e58d",
+    "category": ["talk"]
+  }
 }]
 }

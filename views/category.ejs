@@ -1,6 +1,7 @@
 <!doctype html>
 <%-include('./include/head.ejs', {title: "Category", description: "Jasper, a platform to discover new Radios stations.", author: ""})%>
 <body>
+  <%-include('./include/navbar.ejs', {user:req.user})%>
   <center>
   <%radio.info.forEach(r => {%>
     <%if(r.api.category.includes(req.params.id)) {%>

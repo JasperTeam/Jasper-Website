@@ -3,6 +3,7 @@
   if(req.params.id === r.id) {%>
 <%-include('./include/player.ejs', {title: r.name, description: "Jasper, a platform to discover new Radios stations.", author: r.name, image: r.image, id:r.id})%>
 <body>
+  <%-include('./include/navbar.ejs', {user:req.user})%>
   <div style="width:100%; height: 50em;">
     <div class="player">
     <img src="<%=r.image%>" style="border-radius:100%;" width="150" id="radioimg"/>
@@ -13,7 +14,10 @@
       <p><%=r.name%></p>
     </div>
   </div>
-  <script src="./player.js"></script>
+    <script src="y-serviceworker/y-serviceworker.js"></script>
+   <script src="/push.js/bin/push.min.js"></script>
+    
+  <script src="/player.js"></script>
 </body>
         </html>
   <%}
