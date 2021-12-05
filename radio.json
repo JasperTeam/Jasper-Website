@@ -34,7 +34,7 @@
   "description": "",
   "id": "4",
   "api": {
-    "listen":"http://stream.zeno.fm/skd61bs3998uv",
+    "listen":"https://node-04.zeno.fm/3b955c359e9uv?rj-ttl=5&rj-tok=AAABfYghXRAAUoH2xzsFTlebFQ",
     "category": ["music"]
   }
 }, {

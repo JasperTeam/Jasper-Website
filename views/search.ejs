@@ -7,13 +7,16 @@
       <input class="search" ng-model="radios" name="q"/>
    </form>
     <br>
+    <%if(found) {%>
       <%found.forEach(r=> {%>
         <%if(r) {%>
           <img src="<%=r.image%>" alt="<%=r.name%>" width="100" onclick="window.location.href='/radio/<%=r.id%>';" style="border-radius:100%;"/>
-          <%} else {%>
-            Not found :(
-            <%}%>
+          <%}%>
         <%})%>
+          <%} else {%>
+              What are you looking for here? <%=req.query.q%> hasn't arrived in Jasper technology yet.
+                <button onclick="window.history.back()">Go back</button>
+            <%}%>
   </div>
       
 </body>
