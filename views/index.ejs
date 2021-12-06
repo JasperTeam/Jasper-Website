@@ -4,14 +4,17 @@
   <%-include('./include/navbar.ejs', {user:req.user})%>
   <div id="home">
       <h3 style="padding: 10px;">Welcome to <span style="color:pink;">Jasper</span>!</h3>
-    <form action="/search" ng-submit>
-      <input class="search" ng-model="radios" name="q"/>
-    </form>
     <br>
       <button onclick="location.href='#discover'" class="getstarted" style="width: 80%;">Get started</button>
   </div>
   <div id="discover">
+    <br>
     <center>
+       <form action="/search" ng-submit>
+      <input class="search" ng-model="radios" name="q" placeholder="Search here"/>
+       </form>
+      <br>
+      <br>
       <%-include('./include/radios.ejs')%>
           </center>
   </div>
